@@ -1,0 +1,32 @@
+.input-group {
+    position: relative; /* Để các phần tử con có thể được định vị tuyệt đối hoặc tương đối đến nó */
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.input-group:focus-within,
+.form-control:focus {
+    border: 2px solid #1F3E97 !important; /* Thêm !important để ghi đè lên các thuộc tính khác */
+    border-radius: 8px;
+}
+
+#password,
+#confirm_password {
+    border: none;
+    flex: 1;
+}
+
+.input-group-text {
+    position: absolute;
+    right: 0; /* Đặt vị trí của con mắt sang phải */
+    cursor: pointer;
+    background-color: transparent; /* Để phần màu nền của con mắt trong suốt */
+    border: none; /* Xóa viền của con mắt */
+}
